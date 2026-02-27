@@ -1,0 +1,60 @@
+#score {
+  text-align: center;
+}
+
+#game {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("https://wallpapercave.com/wp/UV9qmUi.png");
+  background-size: cover;
+}
+
+#hog {
+  height: 75px;
+  width: 75px;
+  top: 225px;
+  position: relative;
+  background-image: url("https://th.bing.com/th/id/R.f0886276e661510b481518854b84465f?rik=xpqPicw66%2fzJDg&pid=ImgRaw&r=0");
+  background-size: cover;
+}
+
+#rock {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("https://github.com/kriscfoster/chrome-dino-game/blob/master/rock.png?raw=true");
+  background-size: cover;
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0% {
+    left: 550px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+    top: 225px;
+  }
+  50% {
+    top: 75px;
+  }
+  75% {
+    top: 75px;
+  }
+  100% {
+    top: 225px;
+  }
+}
